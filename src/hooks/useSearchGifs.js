@@ -18,7 +18,7 @@ export const useSearchGifs = () => {
       await new Promise(resolve => { //función para hacer esperar unos segundos antes de cargarg los gifs
         setTimeout(() => {
             resolve(true)
-        }, 1500)
+        }, 1000)
       })
       const response = await fetch(url);
       const data = await response.json();

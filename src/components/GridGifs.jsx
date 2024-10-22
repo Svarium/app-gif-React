@@ -5,10 +5,11 @@ export const GridGifs = ({gifs}) => {
   return (
    <div className='contenedor-grid-gifs'>
      {
-            gifs.map((gif) => (
+            gifs.map((gif, index) => (
              <OneGif
              gif={gif}
              key={gif.id}
+             index={index}
              />
             ))
       } 
