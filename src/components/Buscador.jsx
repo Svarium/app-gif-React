@@ -7,3 +7,4 @@ export const Buscador = ({handleOnSubmit, valorInput, onChangeInput}) => {
     </form>   
   )
 }
+
