@@ -1,11 +1,13 @@
 import {useState} from 'react';
+import { Buscador } from './components/Buscador';
+import { GridGifs } from './components/GridGifs';
 
 function App() {
   //estado
 
   const [valorInput, setValorInput] = useState('');
  
-  const [gif, setGif] = useState([]);
+  const [gifs, setGifs] = useState([]);
 
   const onChangeInput = (e) => {
     const valor = e.target.value;
@@ -23,21 +25,23 @@ function App() {
   const handleOnSubmit = async(e) => {
     e.preventDefault()
     const gifs = await getGifs(valorInput)
-    setGif(gifs)   
+    console.log(gifs);    
+    setGifs(gifs)   
   } 
 
   //JSX
   return (
     <>
      <div>
-      <form onSubmit={handleOnSubmit}>
-          <input value={valorInput} onChange={e => onChangeInput(e)} /> 
-      </form>     
-      {
-        gif.map((gif) => (
-          <img src={gif.images.original.url} key={gif.id} alt="gif" />
-        ))
-      } 
+       <Buscador 
+       valorInput={valorInput}
+       onChangeInput={onChangeInput}
+       handleOnSubmit={handleOnSubmit}
+       />
+     
+     <GridGifs 
+     gifs={gifs}
+     />
      </div>
     </>
   )
