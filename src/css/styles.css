@@ -1,0 +1,37 @@
+body{
+    background-color: #1e1e1e;
+}
+
+.form-buscador{
+    padding: 20px;
+    text-align: center;  
+}
+
+.buscador{
+    padding: 5px;
+    border-radius:15px; 
+    box-shadow: 0px 0px 10px #fff;
+    border:none;   
+}
+
+.buscador:focus-visible{
+    outline: none;
+}
+
+
+.contenedor-grid-gifs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.gif{
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  
+}
+

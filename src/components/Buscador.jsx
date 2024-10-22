@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Buscador = ({handleOnSubmit, valorInput, onChangeInput}) => {
   return (
-    <form onSubmit={handleOnSubmit}>
-          <input value={valorInput} onChange={onChangeInput} /> 
+    <form className='form-buscador' onSubmit={handleOnSubmit}>
+          <input className='buscador' value={valorInput} onChange={onChangeInput} /> 
     </form>   
   )
 }
