@@ -1,6 +1,5 @@
-import OneGif from '../OneGif'
+import {OneGif} from "../../components"
 import './GridGif.css';
-
 
 function GridGifs ({gifs}) {
   return (

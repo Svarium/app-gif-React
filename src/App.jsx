@@ -1,5 +1,4 @@
-import Buscador  from "./components/Buscador";
-import GridGifs  from "./components/GridGifs";
+import {Buscador, GridGifs} from "./components"
 import { useSearchGifs } from "./hooks/useSearchGifs";
 
 function App() {
