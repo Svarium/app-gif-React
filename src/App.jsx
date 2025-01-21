@@ -1,5 +1,5 @@
-import { Buscador } from "./components/Buscador";
-import { GridGifs } from "./components/GridGifs";
+import Buscador  from "./components/Buscador";
+import GridGifs  from "./components/GridGifs";
 import { useSearchGifs } from "./hooks/useSearchGifs";
 
 function App() {

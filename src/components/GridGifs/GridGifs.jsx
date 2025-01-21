@@ -1,7 +1,8 @@
-import React from 'react'
-import {OneGif } from './OneGif';
+import OneGif from '../OneGif'
+import './GridGif.css';
 
-export const GridGifs = ({gifs}) => {
+
+function GridGifs ({gifs}) {
   return (
    <div className='contenedor-grid-gifs'>
      {
@@ -16,3 +17,5 @@ export const GridGifs = ({gifs}) => {
    </div>
   )
 }
+
+export default GridGifs;
